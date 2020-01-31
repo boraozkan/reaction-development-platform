@@ -27,16 +27,16 @@ endef
 # TAG is the git tag or branch to checkout
 # Projects will be started in this order
 define SUBPROJECT_REPOS
-git@github.com:/reactioncommerce/reaction-hydra.git,reaction-hydra,v2.9.1 \
-git@github.com:/reactioncommerce/reaction.git,reaction,v2.9.1 \
-git@github.com:/reactioncommerce/example-storefront.git,example-storefront,v2.9.1
+git@github.com:/boraozkan/reaction-hydra.git,reaction-hydra,v2.9.1 \
+git@github.com:/boraozkan/reaction.git,reaction,v2.9.1 \
+git@github.com:/boraozkan/example-storefront.git,example-storefront,v2.9.1
 endef
 
 # List of user defined networks that should be created.
 define DOCKER_NETWORKS
-auth.reaction.localhost \
-api.reaction.localhost \
-streams.reaction.localhost
+auth.reaction.18.219.58.136 \
+api.reaction.18.219.58.136 \
+streams.reaction.18.219.58.136
 endef
 
 HOOK_DIR=.reaction/project-hooks
